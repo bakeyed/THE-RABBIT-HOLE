@@ -10,24 +10,24 @@ RUN mkdir /var/run/sshd
 
 # Create users for different levels and set passwords
 RUN adduser -D level1 && echo "level1:password" | chpasswd
-RUN adduser -D level2 && echo "level2:password2" | chpasswd
-RUN adduser -D level3 && echo "level3:password3" | chpasswd
-RUN adduser -D level4 && echo "level4:password4" | chpasswd
-RUN adduser -D level5 && echo "level5:password5" | chpasswd
-RUN adduser -D level6 && echo "level6:password6" | chpasswd
-RUN adduser -D level7 && echo "level7:password7" | chpasswd
-RUN adduser -D level8 && echo "level8:password8" | chpasswd
-RUN adduser -D level9 && echo "level9:password9" | chpasswd
+RUN adduser -D level2 && echo "level2:WBLb2b1p" | chpasswd
+RUN adduser -D level3 && echo "level3:jJAEV8GH" | chpasswd
+RUN adduser -D level4 && echo "level4:HARSB74G" | chpasswd
+RUN adduser -D level5 && echo "level5:oU4SgBB4" | chpasswd
+RUN adduser -D level6 && echo "level6:GHfr82AA" | chpasswd
+RUN adduser -D level7 && echo "level7:NNDWijDE" | chpasswd
+RUN adduser -D level8 && echo "level8:jgHH7LAR" | chpasswd
+RUN adduser -D level9 && echo "level9:gYAt78VV" | chpasswd
 
 # Copy files for all levels and set ownership
 COPY levels/level1/readme /home/level1/readme
 COPY levels/level2/inhere/ /home/level2/inhere/
-COPY levels/level3/ /home/level3/
+COPY levels/level3/secret-file.txt /home/level3/secret-file.txt
 COPY levels/level4/.hiddenfile /home/level4/.hiddenfile
 COPY levels/level5/inhere /home/level5/inhere/
-COPY levels/level6/ /home/level6/
-COPY levels/level7/ /home/level7/
-COPY levels/level8/ /home/level8/
+COPY levels/level6/catme.txt /home/level6/catme.txt
+COPY levels/level7/inhere /home/level7/inhere
+COPY levels/level8/random.bin /home/level8/random.bin
 COPY levels/level9/ /home/level9/
 
 # Set ownership for all levels
