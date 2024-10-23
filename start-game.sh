@@ -46,6 +46,7 @@ Remember, Neo: The truth is out there, hidden in plain sight waiting for you to 
 Ready to begin? Show me how deep the rabbit hole goes.
 
 Type ssh level1@localhost -p 2222 to begin the challenge!"
+echo "Password for level1 is password"
 
 # Sleep for a moment before displaying the rabbit
 sleep 1
