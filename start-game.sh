@@ -38,15 +38,14 @@ to navigate through various systems, discover hidden flags, and unveil the truth
 Rules of Engagement
 
 1. Each level contains a hidden flag in the format: FLAG{xxxxxxxx}
-2. Use only the tools provided - no external scripts or automated tools
-3. Document your progress - knowledge is power
-4. If you get stuck, remember: "Free your mind"
+2. Document your progress - knowledge is power
+3. If you get stuck, remember: "Free your mind"
 
 Remember, Neo: The truth is out there, hidden in plain sight waiting for you to glance over
 
 Ready to begin? Show me how deep the rabbit hole goes.
 
-Type ./start to begin your first challenge."
+Type ssh level1@localhost -p 2222 to begin the challenge!"
 
 # Sleep for a moment before displaying the rabbit
 sleep 1
