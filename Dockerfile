@@ -41,10 +41,7 @@ RUN chown -R level1:level1 /home/level1 && \
     chown -R level8:level8 /home/level8 && \
     chown -R level9:level9 /home/level9
 
-# Set specific permissions for level 9
-RUN chmod 700 /home/level9/protected_file && \
-    chmod 600 /home/level9/dummy_file1 /home/level9/dummy_file2 && \
-    chmod 777 /home/level9/accessible_file
+
 
 # Configure SSH to allow login for the level users
 RUN echo 'PermitRootLogin no' >> /etc/ssh/sshd_config && \
