@@ -1,0 +1,99 @@
+version: "3"
+
+services:
+  level1:
+    build: .
+    container_name: level1
+    ports:
+      - "2222:22"
+    environment:
+      - LEVEL=1
+    restart: always
+
+  level2:
+    build: .
+    container_name: level2
+    environment:
+      - LEVEL=2
+    depends_on:
+      - level1
+    ports:
+      - "2223:22"
+    restart: always
+
+  level3:
+    build: .
+    container_name: level3
+    environment:
+      - LEVEL=3
+    depends_on:
+      - level2
+    ports:
+      - "2224:22"
+    restart: always
+
+  level4:
+    build: .
+    container_name: level4
+    environment:
+      - LEVEL=4
+    depends_on:
+      - level3
+    ports:
+      - "2225:22"
+    restart: always
+
+  level5:
+    build: .
+    container_name: level5
+    environment:
+      - LEVEL=5
+    depends_on:
+      - level4
+    ports:
+      - "2226:22"
+    restart: always
+
+  level6:
+    build: .
+    container_name: level6
+    environment:
+      - LEVEL=6
+    depends_on:
+      - level5
+    ports:
+      - "2227:22"
+    restart: always
+
+  level7:
+    build: .
+    container_name: level7
+    environment:
+      - LEVEL=7
+    depends_on:
+      - level6
+    ports:
+      - "2228:22"
+    restart: always
+
+  level8:
+    build: .
+    container_name: level8
+    environment:
+      - LEVEL=8
+    depends_on:
+      - level7
+    ports:
+      - "2229:22"
+    restart: always
+
+  level9:
+    build: .
+    container_name: level9
+    environment:
+      - LEVEL=9
+    depends_on:
+      - level8
+    ports:
+      - "2230:22"
+    restart: always
